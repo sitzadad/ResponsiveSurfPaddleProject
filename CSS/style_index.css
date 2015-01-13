@@ -1,0 +1,744 @@
+
+/******************************
+SMALL=Fixed@320px(mobile first)
+******************************/
+
+body{
+  margin:0;
+  width:320px;
+}
+header{
+  /* background-image:url(../FILES/upper_left_logo.png); */
+  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(../FILES/ocean.png);
+  background-size: 100%;
+  text-align:center;
+
+  padding-top:0.5rem;
+}
+header>nav{
+  font-size:0.7rem;
+
+}
+/* left icon and blog link (hidden for small screen)*/
+header>nav>a:nth-child(1){
+  display:none;
+}
+/* space between about and search */
+header>nav>a:nth-child(2){
+  margin-right:1rem;
+}
+/* navebar links and subtitle */
+header>nav>a, header>div:nth-child(4){
+  color:rgba(37,36,40,0.68);
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-decoration:none;
+  font-weight:bold;
+}
+/* centered icon (only visible on small screen) */
+header>div:nth-child(2){
+  font-size:1.5rem;
+  color:rgba(37,36,40,0.68);
+  margin:0.5rem 0;
+}
+/* website title */
+header>div:nth-child(3){
+  font-family:"Lucida Console", Monaco, monospace;
+  color:white;
+  font-size:1.5rem;
+  letter-spacing:-1px;
+}
+/* website subtitle */
+header>div:nth-child(4){
+  font-size:0.6rem;
+  padding-bottom:1rem;
+  letter-spacing:-0.3px;
+}
+
+
+
+/* SECTION */
+
+
+
+section{
+  font-family:"Lucida Sans Unicode", ‘Lucida Grande’, sans-serif;
+  padding:0 1rem;
+  min-width:320px;
+  box-sizing: border-box;
+}
+/* section title */
+section>h1{
+  color:#073470;
+  margin-bottom:0em;
+  font-size:2.4rem;
+  letter-spacing:-2px;
+}
+/* section author picture & name */
+#section_subtitle_wrapper>img,#section_subtitle_wrapper>span:nth-child(2),#section_subtitle_wrapper>span:nth-child(3){
+  display:none;
+}
+#section_subtitle_wrapper{
+  font-size:0.8rem;
+  margin-bottom:0.5rem;
+}
+.silver{
+  color:silver;
+}
+.blue{
+  color:#006699;
+}
+section>p{
+  display:inline-block;
+}
+blockquote{
+  color:#1A69B0;
+  border-left:2px solid silver;
+  font-size:1.5rem;
+  padding:0.5rem 1rem;
+  margin:0;
+}
+/* section button layout for bigger screen */
+#section_buttons_wrapper_alt{
+  display:none;
+}
+/* bottom section buttons, collectively */
+#section_buttons_wrapper>a{
+  display:inline-block;
+  color:white;
+  text-decoration:none;
+}
+/* icons for bottom section buttons */
+#section_buttons_wrapper>a>i{
+  padding:0.5rem 0.6rem;
+  margin-right:0.2rem;
+}
+/* bottom section buttons, first two */
+#section_buttons_wrapper>a:nth-child(1)>i,#section_buttons_wrapper>a:nth-child(2)>i{
+  background-color:#60686F;
+}
+/* third bottom section button */
+#section_buttons_wrapper>a:nth-child(3)>i{
+  background-color:#153650;
+}
+/* bottom section button words */
+#section_buttons_wrapper>a>span{
+  display:none;
+}
+
+
+
+
+/* ASIDE RIGHT*/
+
+
+
+#right_aside{
+  text-align:center;
+  padding:5rem 1rem 4rem 1rem;
+  min-width:320px;
+  box-sizing: border-box;
+}
+/* circular author photo, right */
+aside>img:nth-child(1){
+  margin-bottom:0.5rem;
+}
+/* author name under circular photo */
+aside>div.blue{
+  margin-bottom:0.2rem;
+}
+/* three social buttons under author's name */
+#aside_social_1, #aside_social_2, #aside_social_3{
+  color:silver;
+  text-decoration:none;
+  font-size:0.9rem;
+  padding: 0 0.4rem;
+}
+/* first two social buttons under author's name */
+#aside_social_1, #aside_social_2{
+  border-right: 1px solid silver;
+}
+/* container for bigger pic below social buttons and subsequent link */
+aside>div:nth-child(4){
+  width:278px;
+  margin:auto;
+}
+#surfer_girl{
+  margin:5rem 0 0.6rem 0;
+}
+/* link under surfer girl image */
+aside>div>a.silver{
+  display:block;
+  text-align:right;
+
+}
+/* title and paragraph under surfer girl (hidden for small screen) */
+aside>h2,aside>p{
+  display:none;
+}
+
+
+/* ASIDE BOTTOM */
+
+
+/* title for bottom aside (picture links to blog posts) */
+#bottom_aside{
+  text-align:center;
+  padding:4.5rem 1rem;
+  border-top:1px solid silver;
+  font-family:"Lucida Sans Unicode", ‘Lucida Grande’, sans-serif;
+  position:relative;
+}
+#bottom_aside>div>h3:nth-child(1){
+  color:#073470;
+  font-size:1.7rem;
+  letter-spacing:-2px;
+  margin-top:0;
+}
+#bottom_aside>div{
+  display:inline-block;
+}
+#bottom_aside>div>a{
+  display:block;
+  height:15rem;
+  width:288px;
+  margin-bottom:1rem;
+  text-decoration:none;
+  color:white;
+  font-size:1.8em;
+  text-align:left;
+  letter-spacing:-1px;
+  box-sizing: border-box;
+}
+#bottom_aside>div>a:nth-child(2){
+  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(../FILES/surfboard.jpg);
+  background-size:cover;
+  padding: 10rem 1rem 1rem 1rem;
+}
+#bottom_aside>div>a:nth-child(2):hover{
+  background:linear-gradient(rgba(31, 103, 181, 0),rgba(31, 103, 181, 0)),url(../FILES/surfboard.jpg);
+  background-size:cover;
+}
+#bottom_aside>div>a:nth-child(3){
+  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(../FILES/beer.jpg);
+  background-size:cover;
+  padding: 12rem 1rem 1rem 1rem;
+}
+#bottom_aside>div>a:nth-child(3):hover{
+  background:linear-gradient(rgba(31, 103, 181, 0),rgba(31, 103, 181, 0)),url(../FILES/beer.jpg);
+  background-size:cover;
+}
+#bottom_aside>div>a:nth-child(4){
+  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(../FILES/zach.png);
+  background-size:cover;
+  padding: 6rem 1rem 1rem 1rem;
+}
+#bottom_aside>div>a:nth-child(4):hover{
+  background:linear-gradient(rgba(31, 103, 181, 0),rgba(31, 103, 181, 0)),url(../FILES/zach.png);
+  background-size:cover;
+}
+#bottom_aside>div>a:nth-child(5){
+  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(../FILES/bottles.jpg);
+  background-size:cover;
+  padding:12rem 1rem 1rem 1rem;
+  display:none;
+}
+#bottom_aside>div>a:nth-child(5):hover{
+  background:linear-gradient(rgba(31, 103, 181, 0),rgba(31, 103, 181, 0)),url(../FILES/bottles.jpg);
+  background-size:cover;
+}
+
+
+
+
+/* FOOTER */
+
+
+
+
+footer{
+  text-align:center;
+  padding:1rem 1rem 3rem 1rem;
+  background-color:#093755;
+  color:#A4B4BF;
+}
+footer>nav>ul{
+  padding:0;
+}
+footer>nav>ul>li:nth-child(4){
+  display:none;
+}
+footer>nav>ul>li:nth-child(1),footer>nav>ul>li:nth-child(2){
+  border-right: 1px solid silver;
+}
+footer li{
+  display:inline-block;
+  padding:0.2rem 0.4rem;
+}
+footer li a{
+  color:#A4B4BF;
+  text-decoration:none;
+  font-size:0.9rem;
+}
+footer img{
+  display:block;
+  margin:2rem auto 0.2rem auto;
+}
+footer div{
+  margin-bottom:0.2rem;
+}
+
+
+
+/*****************************
+MEDIUM/SMALL starts @ 320px
+*****************************/
+
+@media screen and (min-width:320px){
+  body{
+    width:100%;
+  }
+  section{
+    padding-left:10%;
+    padding-right:10%;
+  }
+}
+
+
+
+
+
+
+/*****************************
+MEDIUM/LARGE starts @ 624px
+*****************************/
+
+@media screen and (min-width:624px){
+  #bottom_aside div a,#bottom_aside>div>a:nth-child(5){
+    float:left;
+    display:inline-block;
+  }
+  #bottom_aside>div>a:nth-child(2),#bottom_aside>div>a:nth-child(4){
+    margin-right:1rem;
+  }
+  #bottom_aside>div{
+    width:624px;
+  }
+}
+
+
+/*****************************
+LARGE starts @ 900px
+*****************************/
+
+@media screen and (min-width:900px){
+  section,#right_aside{
+    float:left;
+  }
+  section{
+    margin-bottom:4rem;
+    width:64%;
+  }
+  #right_aside{
+    width:35%;
+  }
+}
+
+
+
+
+/*
+footer{
+width:100%;
+vertical-align:middle;
+float:left;
+background-color:#093755;
+
+padding-top:1.5em;
+padding-bottom:1.5em;
+}
+footer img{
+float:left;
+padding-left:10em;
+padding-right:1em;
+}
+footer ul{
+display:inline-block;
+margin:0;
+padding:0;
+list-style-type:none;
+color:#A4B4BF;
+}
+footer li{
+display:inline-block;
+margin-top:0.8em;
+margin-bottom:0.2em;
+font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+footer ul li:nth-child(2),footer ul li:nth-child(3),footer ul li:nth-child(4){
+border-right: 1px solid #A4B4BF;
+padding-left:0.5em;
+padding-right:0.5em;
+}
+footer ul li:nth-child(5){
+padding-left:0.5em;
+}
+footer ul li:nth-child(2){
+margin-left:15em;
+}
+footer a{
+color:#A4B4BF;
+text-decoration:none;
+
+}
+
+
+
+background-image:url(../FILES/surfboard.jpg);
+}
+#box_two{
+background-image:url(../FILES/beer.jpg);
+}
+#box_three{
+background-image:url(../FILES/zach.png);
+}
+#box_four{
+background-image:url(../FILES/bottles.jpg);
+
+#utility_button_wrapper>img{
+  position:relative;
+  top:0.6em;
+}
+.individual_button_wrapper_1{
+  display:inline-block;
+  background-color:#60686F;
+}
+.individual_button_wrapper_2{
+  display:inline-block;
+  background-color:#60686F;
+  margin-left:0.5em;
+}
+.individual_button_wrapper_3{
+  display:inline-block;
+  background-color:#153650;
+  margin-left:0.5em;
+}
+.silver_button, .blue_button{
+  color:white;
+  display:inline-block;
+  text-decoration:none;
+  padding: 0.35em 0.7em;
+}
+imported icons from fort awesome
+.fa.fa-comment,.fa.fa-cloud-upload,.fa.fa-share-square{
+  color:white;
+  padding-left:0.5em;
+  padding-right:0.1em;
+}
+.silver_button{
+  background-color:silver;
+}
+.blue_button{
+  background-color:#1A69B0;
+}
+*/
+
+
+/* body{
+  margin:0;
+  min-width:1332px;
+}
+header{
+  position: relative;
+  float: left;
+}
+header>img{
+  width:100%;
+  position:relative;
+}
+.tint{
+  display:block;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-color:rgba(31, 103, 181, 0.7);
+  text-align:center;
+}
+header nav{
+  text-align:left;
+  padding-top:.5em;
+  padding-left:10em;
+  color:rgba(37,36,40,0.68);
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  vertical-align:middle;
+  height:58px;
+}
+header nav a{
+  position:relative;
+  display:inline-block;
+  bottom:1em;
+  color:rgba(37,36,40,0.68);
+  text-decoration:none;
+}
+i{
+  color:rgba(37,36,40,0.68);
+}
+header nav a:nth-child(2){
+  left:.7em;
+}
+header nav a:nth-child(3){
+  left:42em;
+  font-weight:bold;
+}
+header nav a:nth-child(4){
+  left:43em;
+  font-weight:bold;
+}
+header nav a:nth-child(5){
+  position:relative;
+  left:42.7em;
+  bottom:.7em;
+}
+#title_wrapper{
+  margin-top:11em;
+}
+#title{
+  font-size:6.5em;
+  font-family:"Lucida Console", Monaco, monospace;
+  color:white;
+  line-height:1em;
+  text-shadow: rgba(37,36,40,0.28) 0 3px;
+  font-stretch: ultra-expanded;
+}
+#subtitle{
+  font-size:16px;
+  color:rgba(37,36,40,0.68);
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+section, aside{
+  float:left;
+
+  box-sizing: border-box;
+}
+section{
+  padding-top:2em;
+  padding-left:11em;
+  padding-right:2.7em;
+  width:64%;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+section>h1{
+  color:#073470;
+  margin-bottom:0em;
+  font-size:3.5em;
+}
+#left_author_photo{
+  width:30px;
+  margin-bottom:1em;
+}
+section span.aqua{
+  position:relative;
+  margin-right:1em;
+  bottom:1.6em;
+}
+section span.silver{
+  position:relative;
+  bottom:1.6em;
+}
+section>p{
+  font-size:1.1em
+}
+.silver{
+  color:silver;
+}
+blockquote{
+  color:#1A69B0;
+  border-left:2px solid grey;
+  font-size:2em;
+  padding-left:1em;
+  margin-left:0.1em;
+}
+.aqua{
+  color:#006699;
+}
+#utility_button_wrapper>img{
+  position:relative;
+  top:0.6em;
+}
+.individual_button_wrapper_1{
+  display:inline-block;
+  background-color:#60686F;
+}
+.individual_button_wrapper_2{
+  display:inline-block;
+  background-color:#60686F;
+  margin-left:0.5em;
+}
+.individual_button_wrapper_3{
+  display:inline-block;
+  background-color:#153650;
+  margin-left:0.5em;
+}
+.silver_button, .blue_button{
+  color:white;
+  display:inline-block;
+  text-decoration:none;
+  padding: 0.35em 0.7em;
+}
+imported icons from fort awesome
+.fa.fa-comment,.fa.fa-cloud-upload,.fa.fa-share-square{
+   color:white;
+  padding-left:0.5em;
+  padding-right:0.1em;
+}
+.silver_button{
+  background-color:silver;
+}
+.blue_button{
+  background-color:#1A69B0;
+}
+aside{
+  width:35%;
+
+  text-align:center;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+#right_author_photo{
+  margin-top:6em;
+}
+aside span.aqua{
+  font-size:1.15em;
+}
+#social_one, #social_two{
+  border-right: 1px solid silver;
+}
+.social_buttons{
+  color:silver;
+  text-decoration:none;
+  font-size:0.9em;
+  padding: 0 0.4em;
+}
+#surfer_girl{
+  margin-top:3.7em;
+  display:inline-block;
+}
+aside>a.silver{
+  display:block;
+  text-align:right;
+  padding-right:7em;
+  padding-top:0.5em;
+}
+aside h2{
+  color:#1A69B0;
+  margin-bottom:0;
+}
+aside p{
+  width:300px;
+  text-align:left;
+  padding-left:6em;
+  margin-top:0.5em;
+}
+#most_popular_posts{
+  display:block;
+  float:left;
+  color:#073470;
+  font-size:3.5em;
+  width:100%;
+  text-align:center;
+  padding:0.6em 0;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  font-weight:bold;
+  text-decoration:none;
+  border-top: silver solid 1px;
+  margin-top:1em;
+}
+.bottom_pics{
+  position:relative;
+  float:left;
+  width:24.85%;
+  height:20em;
+  background-repeat:no-repeat;
+}
+.bottom_pics>a{
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  text-decoration:none;
+  color:rgba(37,36,40,0.88);
+  font-size:1.8em;
+  text-align:left;
+  font-weight:bold;
+}
+#box_one>a,#box_two>a,#box_four>a{
+  padding:9.5em 0 0 0.5em;
+}
+Box three's content is two lines
+#box_three>a{
+  padding:8.4em 0 0 0.5em;
+}
+.bottom_pics>a:hover{
+background-color:rgba(255, 255, 255, 0);
+color:white;
+}
+#box_one,#box_two,#box_four{
+  first dimension is width, second is height
+  background-size:auto 100%;
+}
+#box_three{
+  background-size:100% auto;
+}
+#box_one{
+  background-image:url(../FILES/surfboard.jpg);
+}
+#box_two{
+  background-image:url(../FILES/beer.jpg);
+}
+#box_three{
+  background-image:url(../FILES/zach.png);
+}
+#box_four{
+  background-image:url(../FILES/bottles.jpg);
+}
+footer{
+  width:100%;
+  vertical-align:middle;
+  float:left;
+  background-color:#093755;
+
+  padding-top:1.5em;
+  padding-bottom:1.5em;
+}
+footer img{
+  float:left;
+  padding-left:10em;
+  padding-right:1em;
+}
+footer ul{
+  display:inline-block;
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  color:#A4B4BF;
+}
+footer li{
+  display:inline-block;
+  margin-top:0.8em;
+  margin-bottom:0.2em;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+footer ul li:nth-child(2),footer ul li:nth-child(3),footer ul li:nth-child(4){
+  border-right: 1px solid #A4B4BF;
+  padding-left:0.5em;
+  padding-right:0.5em;
+}
+footer ul li:nth-child(5){
+  padding-left:0.5em;
+}
+footer ul li:nth-child(2){
+  margin-left:15em;
+}
+footer a{
+  color:#A4B4BF;
+  text-decoration:none;
+
+}
+ */
