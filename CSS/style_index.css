@@ -301,6 +301,9 @@ MEDIUM/SMALL starts @ 320px
     padding-left:10%;
     padding-right:10%;
   }
+  nav>ul>li:nth-child(5){
+    display:none;
+  }
 }
 
 
@@ -323,6 +326,42 @@ MEDIUM/LARGE starts @ 624px
   #bottom_aside>div{
     width:624px;
   }
+  footer>nav>ul>li:nth-child(3){
+    border-right: 1px solid silver;
+  }
+  footer>nav>ul>li:nth-child(4){
+    display:inline-block;
+  }
+  
+/*   #section_buttons_wrapper{
+  display:none;
+}
+#section_buttons_wrapper_alt{
+  display:block;
+}
+bottom section buttons, collectively
+#section_buttons_wrapper_alt>a{
+  display:inline-block;
+  color:white;
+  text-decoration:none;
+}
+icons for bottom section buttons
+#section_buttons_wrapper_alt>a>i{
+  padding:0.5rem 0.6rem;
+  margin-right:0.2rem;
+}
+bottom section buttons, first two
+#section_buttons_wrapper_alt>a:nth-child(1)>i,#section_buttons_wrapper>a:nth-child(2)>i{
+  background-color:#60686F;
+}
+third bottom section button
+#section_buttons_wrapper_alt>a:nth-child(3)>i{
+  background-color:#153650;
+}
+bottom section button words
+#section_buttons_wrapper_alt>a>span{
+  display:inline;
+} */
 }
 
 
@@ -343,7 +382,18 @@ LARGE starts @ 900px
   }
 }
 
+/*****************************
+HUGE starts @ 1200px
+*****************************/
 
+@media screen and (min-width:1184px){
+  #bottom_aside>div{
+    width:1184px;
+  }
+  #bottom_aside>div>a:nth-child(2),#bottom_aside>div>a:nth-child(4){
+    margin-right:0;
+  }
+}
 
 
 /*
