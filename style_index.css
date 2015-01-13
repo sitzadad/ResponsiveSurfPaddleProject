@@ -9,10 +9,9 @@ body{
 }
 header{
   /* background-image:url(../FILES/upper_left_logo.png); */
-  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(../FILES/ocean.png);
+  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(ocean.png);
   background-size: 100%;
   text-align:center;
-
   padding-top:0.5rem;
 }
 header>nav{
@@ -46,6 +45,8 @@ header>div:nth-child(3){
   color:white;
   font-size:1.5rem;
   letter-spacing:-1px;
+  line-height:1em;
+  text-shadow: rgba(37,36,40,0.28) 0 3px;
 }
 /* website subtitle */
 header>div:nth-child(4){
@@ -188,7 +189,7 @@ aside>h2,aside>p{
   font-family:"Lucida Sans Unicode", ‘Lucida Grande’, sans-serif;
   position:relative;
 }
-#bottom_aside>div>h3:nth-child(1){
+#bottom_aside>div>h3{
   color:#073470;
   font-size:1.7rem;
   letter-spacing:-2px;
@@ -210,40 +211,40 @@ aside>h2,aside>p{
   box-sizing: border-box;
 }
 #bottom_aside>div>a:nth-child(2){
-  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(../FILES/surfboard.jpg);
+  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(surfboard.jpg);
   background-size:cover;
   padding: 10rem 1rem 1rem 1rem;
 }
 #bottom_aside>div>a:nth-child(2):hover{
-  background:linear-gradient(rgba(31, 103, 181, 0),rgba(31, 103, 181, 0)),url(../FILES/surfboard.jpg);
+  background:linear-gradient(rgba(31, 103, 181, 0),rgba(31, 103, 181, 0)),url(surfboard.jpg);
   background-size:cover;
 }
 #bottom_aside>div>a:nth-child(3){
-  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(../FILES/beer.jpg);
+  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(beer.jpg);
   background-size:cover;
   padding: 12rem 1rem 1rem 1rem;
 }
 #bottom_aside>div>a:nth-child(3):hover{
-  background:linear-gradient(rgba(31, 103, 181, 0),rgba(31, 103, 181, 0)),url(../FILES/beer.jpg);
+  background:linear-gradient(rgba(31, 103, 181, 0),rgba(31, 103, 181, 0)),url(beer.jpg);
   background-size:cover;
 }
 #bottom_aside>div>a:nth-child(4){
-  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(../FILES/zach.png);
+  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(zach.png);
   background-size:cover;
   padding: 6rem 1rem 1rem 1rem;
 }
 #bottom_aside>div>a:nth-child(4):hover{
-  background:linear-gradient(rgba(31, 103, 181, 0),rgba(31, 103, 181, 0)),url(../FILES/zach.png);
+  background:linear-gradient(rgba(31, 103, 181, 0),rgba(31, 103, 181, 0)),url(zach.png);
   background-size:cover;
 }
 #bottom_aside>div>a:nth-child(5){
-  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(../FILES/bottles.jpg);
+  background:linear-gradient(rgba(31, 103, 181, 0.7),rgba(31, 103, 181, 0.7)),url(bottles.jpg);
   background-size:cover;
   padding:12rem 1rem 1rem 1rem;
   display:none;
 }
 #bottom_aside>div>a:nth-child(5):hover{
-  background:linear-gradient(rgba(31, 103, 181, 0),rgba(31, 103, 181, 0)),url(../FILES/bottles.jpg);
+  background:linear-gradient(rgba(31, 103, 181, 0),rgba(31, 103, 181, 0)),url(bottles.jpg);
   background-size:cover;
 }
 
@@ -261,13 +262,10 @@ footer{
   background-color:#093755;
   color:#A4B4BF;
 }
-footer>nav>ul{
+footer>nav ul{
   padding:0;
 }
-footer>nav>ul>li:nth-child(4){
-  display:none;
-}
-footer>nav>ul>li:nth-child(1),footer>nav>ul>li:nth-child(2){
+footer nav ul li:nth-child(3),footer>nav>ul>li:nth-child(4){
   border-right: 1px solid silver;
 }
 footer li{
@@ -279,11 +277,14 @@ footer li a{
   text-decoration:none;
   font-size:0.9rem;
 }
-footer img{
+.footer_logo_copyright_alt{
+  display:none;
+}
+footer div img{
   display:block;
   margin:2rem auto 0.2rem auto;
 }
-footer div{
+#footer_logo_copyright{
   margin-bottom:0.2rem;
 }
 
@@ -301,11 +302,10 @@ MEDIUM/SMALL starts @ 320px
     padding-left:10%;
     padding-right:10%;
   }
-  nav>ul>li:nth-child(5){
-    display:none;
+footer>nav>ul>li:nth-child(5){
+  border-right: 1px solid silver;
   }
 }
-
 
 
 
@@ -326,13 +326,7 @@ MEDIUM/LARGE starts @ 624px
   #bottom_aside>div{
     width:624px;
   }
-  footer>nav>ul>li:nth-child(3){
-    border-right: 1px solid silver;
-  }
-  footer>nav>ul>li:nth-child(4){
-    display:inline-block;
-  }
-  
+
 /*   #section_buttons_wrapper{
   display:none;
 }
@@ -382,6 +376,51 @@ LARGE starts @ 900px
   }
 }
 
+
+
+
+/*****************************
+CUTOFF FOR HEADER/FOOTER @ 1060px
+*****************************/
+
+
+@media screen and (min-width:1060px){
+  header{
+    background-size:100% 100%;
+    padding-bottom:14rem;
+  }
+  /* left icon and blog link (hidden for small screen)*/
+  header>nav>a:nth-child(1){
+    display:inline;
+    margin-right:50%;
+  }
+  header>nav>a:nth-child(1)>i{
+    font-size:2rem;
+    padding-bottom:-4rem;
+    position:relative;
+    top:0.4rem;
+  }
+  /* website title */
+  header>div:nth-child(3){
+    font-size:6.5rem;
+  }
+  /* website subtitle */
+  header>div:nth-child(4){
+    font-size:16px;
+    font-weight:normal;
+  }
+  /* centered icon (only visible on small screen) */
+  header>div:nth-child(2){
+    display:none;
+  }
+  header>nav{
+    font-size:medium;
+    margin-bottom:11rem;
+    position:relative;
+  }
+
+}
+
 /*****************************
 HUGE starts @ 1200px
 *****************************/
@@ -392,6 +431,25 @@ HUGE starts @ 1200px
   }
   #bottom_aside>div>a:nth-child(2),#bottom_aside>div>a:nth-child(4){
     margin-right:0;
+  }
+  #bottom_aside>div>h3{
+    font-size:3.5rem;
+  }
+  .footer_logo_copyright_alt{
+    display:inline-block;
+  }
+  #footer_logo_copyright{
+    display:none;
+  }
+  footer>nav>ul>li:nth-child(2){
+    margin-right:20%;
+  }
+  footer>nav{
+    position:relative;
+  }
+  footer>nav>ul>li:nth-child(1){
+    top:0.6rem;
+    position:relative;
   }
 }
 
