@@ -1,0 +1,447 @@
+/* colors */
+$tint:rgba(31, 103, 181, 0.7);
+$clear:rgba(31, 103, 181, 0);
+$header_dark_text:rgba(37,36,40,0.68);
+$header_shadow_color:rgba(37,36,40,0.28);
+$body_title_blue:#073470;
+$silver:silver;
+$blue:#006699;
+$alt_blue:#1A69B0;
+$white:white;
+$button_silver:#60686F;
+$button_blue:#153650;
+$footer_background_color:#093755;
+$footer_text_color:#A4B4BF;
+/* images */
+$header_background:url(ocean.png);
+$box1_image:url(surfboard.jpg);
+$box2_image:url(beer.jpg);
+$box3_image:url(zach.png);
+$box4_image:url(bottles.jpg);
+/* fonts */
+$font_headings:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+$font_title:"Lucida Console", Monaco, monospace;
+
+/******************************
+SMALL=Fixed@320px(mobile first)
+******************************/
+
+body{
+  margin:0;
+  width:320px;
+}
+header{
+  background:linear-gradient($tint,$tint),$header_background;
+  background-size: 100%;
+  text-align:center;
+  padding-top:0.5rem;
+}
+header>nav{
+  font-size:0.7rem;
+
+}
+/* left icon and blog link (hidden for small screen)*/
+header>nav>a:nth-child(1){
+  display:none;
+}
+/* space between about and search */
+header>nav>a:nth-child(2){
+  margin-right:1rem;
+}
+/* navebar links and subtitle */
+header>nav>a, header>div:nth-child(4){
+  color:$header_dark_text;
+  font-family:$font_headings;
+  text-decoration:none;
+  font-weight:bold;
+}
+/* centered icon (only visible on small screen) */
+header>div:nth-child(2){
+  font-size:1.5rem;
+  color:$header_dark_text;
+  margin:0.5rem 0;
+}
+/* website title */
+header>div:nth-child(3){
+  font-family:$font_title;
+  color:white;
+  font-size:1.5rem;
+  letter-spacing:-1px;
+  line-height:1em;
+  text-shadow: $header_shadow_color 0 3px;
+}
+/* website subtitle */
+header>div:nth-child(4){
+  font-size:0.6rem;
+  padding-bottom:1rem;
+  letter-spacing:-0.3px;
+}
+
+
+
+/* SECTION */
+
+
+
+section{
+  font-family:$font_headings;
+  padding:0 1rem;
+  min-width:320px;
+  box-sizing: border-box;
+}
+/* section title */
+section>h1{
+  color:$body_title_blue;
+  margin-bottom:0em;
+  font-size:2.4rem;
+  letter-spacing:-2px;
+}
+/* section author picture & name */
+#section_subtitle_wrapper>img,#section_subtitle_wrapper>span:nth-child(2),#section_subtitle_wrapper>span:nth-child(3){
+  display:none;
+}
+#section_subtitle_wrapper{
+  font-size:0.8rem;
+  margin-bottom:0.5rem;
+}
+.silver{
+  color:$silver;
+}
+.blue{
+  color:$blue;
+}
+section>p{
+  display:inline-block;
+}
+blockquote{
+  color:$alt_blue;
+  border-left:2px solid silver;
+  font-size:1.5rem;
+  padding:0.5rem 1rem;
+  margin:0;
+}
+/* section button layout for bigger screen */
+#section_buttons_wrapper_alt{
+  display:none;
+}
+/* bottom section buttons, collectively */
+#section_buttons_wrapper>a{
+  display:inline-block;
+  color:$white;
+  text-decoration:none;
+}
+/* icons for bottom section buttons */
+#section_buttons_wrapper>a>i{
+  padding:0.5rem 0.6rem;
+  margin-right:0.2rem;
+}
+/* bottom section buttons, first two */
+#section_buttons_wrapper>a:nth-child(1)>i,#section_buttons_wrapper>a:nth-child(2)>i{
+  background-color:$button_silver;
+}
+/* third bottom section button */
+#section_buttons_wrapper>a:nth-child(3)>i{
+  background-color:$button_blue;
+}
+/* bottom section button words */
+#section_buttons_wrapper>a>span{
+  display:none;
+}
+
+
+
+
+/* ASIDE RIGHT*/
+
+
+
+#right_aside{
+  text-align:center;
+  padding:5rem 1rem 4rem 1rem;
+  min-width:320px;
+  box-sizing: border-box;
+}
+/* circular author photo, right */
+aside>img:nth-child(1){
+  margin-bottom:0.5rem;
+}
+/* author name under circular photo */
+aside>div.blue{
+  margin-bottom:0.2rem;
+}
+/* three social buttons under author's name */
+#aside_social_1, #aside_social_2, #aside_social_3{
+  color:$silver;
+  text-decoration:none;
+  font-size:0.9rem;
+  padding: 0 0.4rem;
+}
+/* first two social buttons under author's name */
+#aside_social_1, #aside_social_2{
+  border-right: 1px solid silver;
+}
+/* container for bigger pic below social buttons and subsequent link */
+aside>div:nth-child(4){
+  width:278px;
+  margin:auto;
+}
+#surfer_girl{
+  margin:5rem 0 0.6rem 0;
+}
+/* link under surfer girl image */
+aside>div>a.silver{
+  display:block;
+  text-align:right;
+
+}
+/* title and paragraph under surfer girl (hidden for small screen) */
+aside>h2,aside>p{
+  display:none;
+}
+
+
+/* ASIDE BOTTOM */
+
+
+/* title for bottom aside (picture links to blog posts) */
+#bottom_aside{
+  text-align:center;
+  padding:4.5rem 1rem;
+  border-top:1px solid silver;
+  font-family:$font_headings;
+  position:relative;
+}
+#bottom_aside>div>h3{
+  color:$body_title_blue;
+  font-size:1.7rem;
+  letter-spacing:-2px;
+  margin-top:0;
+}
+#bottom_aside>div{
+  display:inline-block;
+}
+#bottom_aside>div>a{
+  display:block;
+  height:15rem;
+  width:288px;
+  margin-bottom:1rem;
+  text-decoration:none;
+  color:white;
+  font-size:1.8em;
+  text-align:left;
+  letter-spacing:-1px;
+  box-sizing: border-box;
+}
+#bottom_aside>div>a:nth-child(2){
+  background:linear-gradient($tint,$tint),$box1_image;
+  background-size:cover;
+  padding: 10rem 1rem 1rem 1rem;
+}
+#bottom_aside>div>a:nth-child(2):hover{
+  background:linear-gradient($clear,$clear),$box1_image;
+  background-size:cover;
+}
+#bottom_aside>div>a:nth-child(3){
+  background:linear-gradient($tint,$tint),$box2_image;
+  background-size:cover;
+  padding: 12rem 1rem 1rem 1rem;
+}
+#bottom_aside>div>a:nth-child(3):hover{
+  background:linear-gradient($clear,$clear),$box2_image;
+  background-size:cover;
+}
+#bottom_aside>div>a:nth-child(4){
+  background:linear-gradient($tint,$tint),$box3_image;
+  background-size:cover;
+  padding: 7.7rem 1rem 1rem 1rem;
+}
+#bottom_aside>div>a:nth-child(4):hover{
+  background:linear-gradient($clear,$clear),$box3_image;
+  background-size:cover;
+}
+#bottom_aside>div>a:nth-child(5){
+  background:linear-gradient($tint,$tint),$box4_image;
+  background-size:cover;
+  padding:12rem 1rem 1rem 1rem;
+  display:none;
+}
+#bottom_aside>div>a:nth-child(5):hover{
+  background:linear-gradient($clear,$clear),$box4_image;
+  background-size:cover;
+}
+
+
+
+
+/* FOOTER */
+
+
+
+
+footer{
+  text-align:center;
+  padding:1rem 1rem 3rem 1rem;
+  background-color:$footer_background_color;
+  color:$footer_text_color;
+}
+footer>nav ul{
+  padding:0;
+}
+footer nav ul li:nth-child(3),footer>nav>ul>li:nth-child(4){
+  border-right: 1px solid silver;
+}
+footer li{
+  display:inline-block;
+  padding:0.2rem 0.4rem;
+}
+footer li a{
+  color:$footer_text_color;
+  text-decoration:none;
+  font-size:0.9rem;
+}
+.footer_logo_copyright_alt{
+  display:none;
+}
+footer div img{
+  display:block;
+  margin:2rem auto 0.2rem auto;
+}
+#footer_logo_copyright{
+  margin-bottom:0.2rem;
+}
+
+
+
+/*****************************
+MEDIUM/SMALL starts @ 320px
+*****************************/
+
+@media screen and (min-width:320px){
+  body{
+    width:100%;
+  }
+  section{
+    padding-left:10%;
+    padding-right:10%;
+  }
+  footer>nav>ul>li:nth-child(5){
+    border-right: 1px solid silver;
+  }
+}
+
+
+
+
+
+/*****************************
+MEDIUM/LARGE starts @ 624px
+*****************************/
+
+@media screen and (min-width:624px){
+  #bottom_aside div a,#bottom_aside>div>a:nth-child(5){
+    float:left;
+    display:inline-block;
+  }
+  #bottom_aside>div>a:nth-child(2),#bottom_aside>div>a:nth-child(4){
+    margin-right:1rem;
+  }
+  #bottom_aside>div{
+    width:624px;
+  }
+}
+
+
+
+/*****************************
+LARGE starts @ 900px
+*****************************/
+
+@media screen and (min-width:900px){
+  section,#right_aside{
+    float:left;
+  }
+  section{
+    margin-bottom:4rem;
+    width:64%;
+  }
+  #right_aside{
+    width:35%;
+  }
+}
+
+
+
+
+/*****************************
+CUTOFF FOR HEADER/FOOTER @ 1060px
+*****************************/
+
+
+@media screen and (min-width:1060px){
+  header{
+    background-size:100% 100%;
+    padding-bottom:14rem;
+  }
+  /* left icon and blog link (hidden for small screen)*/
+  header>nav>a:nth-child(1){
+    display:inline;
+    margin-right:50%;
+  }
+  header>nav>a:nth-child(1)>i{
+    font-size:2rem;
+    padding-bottom:-4rem;
+    position:relative;
+    top:0.4rem;
+  }
+  /* website title */
+  header>div:nth-child(3){
+    font-size:6.5rem;
+  }
+  /* website subtitle */
+  header>div:nth-child(4){
+    font-size:16px;
+    font-weight:normal;
+  }
+  /* centered icon (only visible on small screen) */
+  header>div:nth-child(2){
+    display:none;
+  }
+  header>nav{
+    font-size:medium;
+    margin-bottom:11rem;
+    position:relative;
+  }
+
+}
+
+/*****************************
+HUGE starts @ 1200px
+*****************************/
+
+@media screen and (min-width:1184px){
+  #bottom_aside>div{
+    width:1184px;
+  }
+  #bottom_aside>div>a:nth-child(2),#bottom_aside>div>a:nth-child(4){
+    margin-right:0;
+  }
+  #bottom_aside>div>h3{
+    font-size:3.5rem;
+  }
+  .footer_logo_copyright_alt{
+    display:inline-block;
+  }
+  #footer_logo_copyright{
+    display:none;
+  }
+  footer>nav>ul>li:nth-child(2){
+    margin-right:20%;
+  }
+  footer>nav{
+    position:relative;
+  }
+  footer>nav>ul>li:nth-child(1){
+    top:0.6rem;
+    position:relative;
+  }
+}
