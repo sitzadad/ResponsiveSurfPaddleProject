@@ -1,0 +1,39 @@
+@mixin hov-tint($rgba1,$rgba2,$image,$size){
+  background:linear-gradient($rgba1,$rgba1),$image;
+  background-size:$size;
+  &:hover{
+    background:linear-gradient($rgba2,$rgba2),$image;
+    background-size:$size;
+  }
+}
+/*
+DEMO EXAMPLE FROM IRON YARD Jan 14 2015
+
+EXAMPLE ONE:
+
+DEFINE MIXIN
+@mixin val-gradient(\$rgba1,\$rgba2,\$Image){
+background:linear-gradient(\$rgba1,\$rgba2),\$Image;
+}
+
+USE MIXIN
+@include val-gradient();
+
+
+EXAMPLE TWO:
+
+DEFINE MIXIN ("5%" is default value to be overriden by user input)
+@mixin border-radius(\$radius:5%){
+-webkit-border-radius:\$radius;
+-moz-border-radius:\$radius;
+border-radius:\$radius;
+}
+
+USE MIXIN
+@include border-radius();
+
+
+EXAMPLE THREE
+
+@extend; COMMENT:This pulls in a pre-established set of styles that can then be overridden or added upon
+*/
